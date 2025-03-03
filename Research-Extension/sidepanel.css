@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    /* padding: 15px; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* margin: 5% 20px 0 20px; */
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    /* position: fixed;  */
+}
+
+.header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1a73e8;
+    background-color: black;
+}
+
+.header h2 {
+    margin: 0px;
+    color: #1a73e8;
+}
+
+.notes h3 {
+    margin: 0px;
+    color: #1a73e8;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+
+
+.notes button {
+    display: flex;
+    margin-top: 15px;
+}
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* background-color: #3b6baa; */
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+/* .notes textarea {
+    width: 100%;
+    height : 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 10px;
+    background-color: black;
+    border-color: #1a73e8;
+    color: white;
+} */
+
+.notes textarea {
+    width: calc(100% - 21px); /* Adjust as needed */
+    margin: 0 auto;
+    height: 100px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    resize: vertical;
+    /* background-color: #1557b0;
+    opacity: 1; */
+}
+
+.notes #notes {
+    background-color: #1558b01e;
+    /* opacity: 1; */
+}
+  
+
+#results {
+    height: 100px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: white;
+    resize: vertical;
+    width: calc(100% -21px);
+}
